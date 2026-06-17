@@ -1,14 +1,56 @@
-/* Cores:
-#00ae9d (turquesa)
-#003641 (verde escuro)
-#7db61c (verde médio)
-#c9d200 (verde claro)
-#49479d (roxo)
-#fffff (branco)
+/* Cores:                               Fontes:                                            
+#00ae9d (turquesa)                      myriad pro bold      
+#003641 (verde escuro)                  myriad pro condensed
+#7db61c (verde médio)                   myriad pro semibold
+#c9d200 (verde claro)                   arial regular 
+#49479d (roxo)                          arial bold
+#fffff (branco) */
 
-Fontes:
-myriad pro bold
-myriad pro condensed
-myriad pro semibold
-arial regular
-arial bold */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+.container1{
+    width: 100%;
+    height: 200px;
+    background-color: #003641;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 20px 0px;
+
+}
+
+.container2{
+    width: 100%;
+    height: 200px;
+    background-color: #7db61c;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 20px 0px;
+    
+}
+
+.img_logo{
+
+    width: 150px;
+}
+
+.menu{
+
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
