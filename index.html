@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+
 
     <header>
-        
+        <div class="conteiner_header">
             <div class="container1">
                 <figure>
                     <img src="./img/heartpaw.png" alt="logo de cachorro com coração" class="img_logo">
@@ -24,26 +26,92 @@
             </div>
 
             <div class="container2">
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptatem quo tempora unde adipisci iste sequi aliquid facilis nobis dignissimos, incidunt ea velit officia totam officiis temporibus in ratione exercitationem!</h3>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptatem quo tempora unde adipisci
+                iste sequi aliquid facilis nobis dignissimos, incidunt ea velit officia totam officiis temporibus in
+                ratione exercitationem!</h3>
             </div>
 
 
-            <!-- alterar para navbar bootstrap -->
-            <nav>
-                <ul class="menu">
-                    <li class="item_menu">Item 1</li>
-                    <li class="item_menu">Item 2</li>
-                    <li class="item_menu">Item 3</li>
-                    <li class="item_menu">Item 4</li>
-                    <li class="item_menu">Item 5</li>
-                    <li class="item_menu">Item 6</li>
-                </ul>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Item1</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             </nav>
-     
+        </div>
     </header>
 
     <main>
+        <div class="conteiner_cards">
 
+            <ul class="cards">
+                <li class="card_animais">
+                    <img src="./img/ProdutosCachorro.png" alt="produtos cachorro" class="img_produtos">
+                    <div class="info">
+                        <a href="#" class="btn_compra">Compre Agora</a>
+                    </div>
+                </li>
+                <li class="card_animais">
+                    <img src="./img/ProdutosCavalo.png" alt="produtos cavalo" class="img_produtos">
+                    <div class="info">
+                        <a href="#" class="btn_compra">Compre Agora</a>
+                    </div>
+                </li>
+                <li class="card_animais">
+                    <img src="./img/ProdutosPeixe.png" alt="produtos peixe" class="img_produtos">
+                    <div class="info">
+                        <a href="#" class="btn_compra">Compre Agora</a>
+                    </div>
+                </li>
+                <li class="card_animais">
+                    <img src="./img/ProdutosPassaros.png" alt="produtos passaro" class="img_produtos">
+                    <div class="info">
+                        <a href="#" class="btn_compra">Compre Agora</a>
+                    </div>
+                </li>
+                <li class="card_animais">
+                    <img src="./img/ProdutosGato.png" alt="produtos gato" class="img_produtos">
+                    <div class="info">
+                        <a href="#" class="btn_compra">Compre Agora</a>
+                    </div>
+                </li>
+
+            </ul>  
+        
+
+
+        </div>
 
 
 
@@ -73,8 +141,9 @@
 
 
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    </body>
+</body>
+
 </html>
