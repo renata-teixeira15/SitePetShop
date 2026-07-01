@@ -1,9 +1,9 @@
-/* Cores:                               Fontes:                                            
-#00ae9d (turquesa)                      myriad pro bold      
-#003641 (verde escuro)                  myriad pro condensed
-#7db61c (verde médio)                   myriad pro semibold
-#c9d200 (verde claro)                   arial regular 
-#49479d (roxo)                          arial bold
+/* Cores:                               Fontes:                            azul #2d4170      
+#00ae9d (turquesa)                      myriad pro bold                    laranja #bf793d 
+#003641 (verde escuro)                  myriad pro condensed               verde #386058
+#7db61c (verde médio)                   myriad pro semibold                bege #ded5cc
+#c9d200 (verde claro)                   arial regular                           #fdfffa
+#49479d (roxo)                          arial bold                              #e1ddd4
 #fffff (branco) */
 
 *{
@@ -16,8 +16,8 @@ box-sizing: border-box;
 .container1{
     width: 100%;
     height: 200px;
-    background-color: #003641;
-    color: #fff;
+    background-color: #2d4170;
+    color: #ded5cc;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -29,8 +29,8 @@ box-sizing: border-box;
 .container2{
     width: 100%;
     /* height: 200px; */
-    background-color: #7db61c;
-    color: #fff;
+    background-color: #bf793d;
+    color: #e1ddd4;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,39 +58,44 @@ box-sizing: border-box;
     height: 100%;
 }
 
-.conteiner_cards{
-    width: 1260px;
+.conteiner_produtos{
+    width: 100%;
     height: 300px;
-    background-color: #003641;
+    background-color: #2d4170;
     margin: 0 auto;
     margin-top: 50px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     list-style: none;
     gap: 25px;
 }
-.titulo{
-    color: #fff;
+.h2{
+    color: #ded5cc;
+
 }
 
 .cards{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .card_animais{
+    width: 100%;
+    height: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-left: 1.5rem;
 }
 
 .img_produtos{
-    width:200px;
+    width:120px;
     display: flex;
     justify-content: space-between;
     
@@ -102,11 +107,12 @@ box-sizing: border-box;
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    
 }
 
 .titulo_produto{
     font-size: 12px;
-    color: #fff;
+    color: #ded5cc;
 }
 
 .btn_compra{
@@ -115,10 +121,66 @@ box-sizing: border-box;
     padding: 7px;
     text-align: center;
     text-decoration: none;
-    background-color:#7db61c;
-    color: #fff;
+    background-color:#bf793d ;
+    color: #ded5cc;
     display: flex;
     justify-content: space-between;
+}
+
+
+.animals{
+    width: 90%;
+    height: 30%;
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+
+.btn_vejamais{
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color:#386058;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-carousel .carousel-inner {
+    padding: 0.5em 2em; 
+}
+
+.footer-carousel .card {
+    margin: 0 0.25em;
+    box-shadow: 0 4px 6px #ded5cc;
+    border: none;
+    background-color: #e1ddd4; 
+    color: #386058;
+}
+
+.footer-carousel .card-img-top {
+    height: 120px;
+    object-fit: cover;
+}
+        
+.footer-carousel .carousel-control-prev-icon,
+.footer-carousel .carousel-control-next-icon {
+    background-color: #386058;
+    background-size: 60% 60%;
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.footer-carousel .carousel-control-prev-icon:hover,
+.footer-carousel .carousel-control-next-icon:hover {
+    background-color: #bf793d;
 }
 
 
@@ -143,10 +205,37 @@ box-sizing: border-box;
     }
 
     .cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* justify-content: center; */
-    }
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    
+}
+
+    .card_animais{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%; 
+}
+
+.img_produtos{
+display: none !important;
+    
+}
+
+
+
 
 }
